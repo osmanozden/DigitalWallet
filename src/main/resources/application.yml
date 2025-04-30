@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
+  jpa:
+    show-sql: false
+  security:
+    user:
+      name: disabled
+      password: disabled
+
+server:
+  port: 8082
+
+jwt:
+  secret: aVW91IEwTCNI6pqKl7FlTLr66Ma0cmwu5g+eyVZ1TD6NkOx4oM8QasaTtvhjfsRQ
+  expiration: 1800000
